@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Latitude Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+    
+        <!-- Menu Section -->
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <a href="landing.html"> <span class="align-bottom" style="background-color:rgb(74, 170, 165); 
+                color: white;font-size: 25px; padding: 12px;">Latitude</span></a>
+                <nav class="navbar navbar-light navbar-expand-sm float-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="lat_temp_visualization.html">Max Temperature</a>
+                              <a class="dropdown-item" href="lat_hum_visualization.html">Humidity</a>
+                              <a class="dropdown-item" href="lat_cloud_visualization.html">Cloudiness</a>
+                              <a class="dropdown-item" href="lat_wind_visualization.html">Wind Speed</a>
+                            </div>
+                          </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="data_page.html">Data</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="row alert alert-light">
+            
+            <div class="col-sm offset-1" style="background-color: rgb(231, 240, 239); padding: 20px;">
+                <h1>Comparison: Latitude vs X</h1>
+                <h2>Click any plot to get an in-depth analysis</h2>
+                <div class="row">
+                    <div class=" col-lg-6 col-sm-1" style="border-radius: 1px solid;">
+                        <h3>vs Max Temperature</h3>
+                        <a href="lat_temp_visualization.html"><img src="./visualizations/lat_vs_temp.png" class="rounded mx-auto d-block comparison_img"/></a>
+                    </div>
+                    <div class="col-lg-6 col-sm-1">
+                        <h3>vs Wind Speed</h3>
+                        <a href="lat_wind_visualization.html"><img src="./visualizations/lat_vs_wind.png" class="rounded mx-auto d-block comparison_img"/> </a>
+                    </div>
+                </div>
+                <div class="row"></div>
+                    <div class="col" style="height: 10px;"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-1 ">
+                        <h3>vs Humidity</h3>
+                        <a href="lat_hum_visualization.html"><img src="./visualizations/lat_vs_humidity.png" class="rounded mx-auto d-block comparison_img"/> </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-1">
+                        <h3>vs Cloudiness</h3>
+                        <a href="lat_cloud_visualization.html"><img src="./visualizations/lat_vs_cloud.png" class="rounded mx-auto d-block comparison_img"/> </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-1"></div>
+          </div>
+    </div>
+</body>
+</html>
